@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Asteroids</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="stage">
+      <canvas id="game" width="800" height="600"></canvas>
+      <div id="overlay" class="overlay">
+        <h1>ASTEROIDS</h1>
+        <p><kbd>←</kbd><kbd>→</kbd> giram · <kbd>↑</kbd> acelera · <kbd>Espaço</kbd> atira · <kbd>Shift</kbd> hiperespaço · <kbd>P</kbd> pausa</p>
+        <p>Asteroides grandes valem 20, médios 50, pequenos 100. Vida extra a cada 10.000 pontos.</p>
+        <p class="cta">Toque ou pressione uma tecla para começar</p>
+      </div>
+    </section>
+    <nav class="touch" id="touch">
+      <button data-action="left">↺</button>
+      <button data-action="thrust">▲</button>
+      <button data-action="right">↻</button>
+      <button data-action="fire">●</button>
+      <button data-action="hyper">✦</button>
+    </nav>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/vec.js"></script>
+  <script src="js/ship.js"></script>
+  <script src="js/asteroid.js"></script>
+  <script src="js/bullet.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
